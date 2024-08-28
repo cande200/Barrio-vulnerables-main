@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candela Mazza - Mapeo de Barrios</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <span class="logo"><a href="index.html">Desigualdad Social</a></span>
+            <div class="menu-toggle">&#9776;</div>
+            <ul>
+                <li><a href="#quienes-somos">Quienes Somos</a></li>
+                <li><a href="#fundacion-techo">Fundación Techo</a></li>
+                <li><a href="#graficos">Gráficos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quienes-somos">
+            <h2>Quienes Somos</h2>
+            <p><strong>En el pasado, éramos un equipo comprometido con la mejora de la calidad de vida en los barrios.
+                    Sin embargo, a lo largo del curso, nuestro grupo se desintegró por falta de organización.</strong> A pesar de esto, he
+                decidido enfocarme en la desigualdad social, un tema que marca una gran diferencia en nuestra sociedad.
+                Este desafío es personal y significativo para mí, ya que provengo de Villa Lugano, un barrio que
+                enfrenta múltiples dificultades.</p>
+
+            <p>Actualmente, soy estudiante del campus Chicas Tech, un programa dedicado a empoderar a mujeres jóvenes en
+                tecnología. Chicas Tech es conocido por su enfoque en cerrar la brecha de género en el sector
+                tecnológico y fomentar la participación de mujeres en campos STEM.</p>
+
+            <p>En el marco de mi formación en Chicas Tech, participo en el curso <strong>Grace Hopper</strong>, en honor a
+                una pionera en el campo de la informática.<strong>Grace Hopper</strong> fue una destacada científica de la computación y
+                almirante de la Marina de los Estados Unidos, <strong> conocida por su trabajo en el desarrollo del primer
+                compilador para lenguajes de programación y por su papel crucial en la creación del lenguaje COBOL.</strong> Su
+                legado continúa inspirando a generaciones de mujeres en tecnología, y este curso busca seguir su ejemplo
+                promoviendo la inclusión y el avance en el campo tecnológico.</p>
+
+
+            <p>Las clases en este programa son impartidas por las reconocidas profesoras <strong>Lu y Ludmi</strong>, quienes ofrecen una
+                formación integral y apoyan a las estudiantes en su desarrollo profesional.</p>
+
+            <p>Mi nombre es <strong>Candela Mazza</strong>, tengo 24 años y, como estudiante de Chicas Tech, me esfuerzo por adquirir las
+                habilidades necesarias para contribuir de manera significativa a la sociedad.</p>
+
+        </section>
+        <section id="fundacion-techo">
+            <h2>Fundación Techo</h2>
+            <p>Fundación Techo es una <strong>organización</strong> que trabaja para erradicar la pobreza en América
+                Latina a través de la construcción de viviendas y el desarrollo comunitario.</p>
+            <p>El principal proyecto es acercar a las familias a una vivienda digna. Buscamos dar respuesta al déficit
+                habitacional originado por la situación de pobreza o por causa de desastres naturales que afectan a
+                miles de personas.</p>
+            <p><strong>El principal propósito de techo es construir una sociedad justa y sin pobreza.</strong></p>
+            <p><strong>Misión:</strong> Movilizar voluntariado joven para trabajar con sentido de urgencia en acción
+                conjunta con los habitantes de los asentamientos populares y otros actores de la sociedad, desarrollando
+                soluciones de vivienda y hábitat y fortaleciendo las capacidades comunitarias.</p>
+            <p><strong>Visión 2030:</strong> Ser una organización que ha transformado la calidad de vida de 1 millón de
+                personas que dejaron de vivir en un piso de tierra en América Latina y el Caribe, a través de la
+                movilización de 2 millones de personas voluntarias.</p>
+            <p>Actualmente, Fundación Techo está presente en <strong>18 países</strong> y ha construido viviendas de emergencia para más
+                de <strong>146,000 familias</strong>. Además, más de <strong>1.5 millones</strong> de voluntarios y voluntarias se han movilizado para
+                apoyar esta causa.</p>
+            <p>Para conocer más te invito a que hagas clic en la imagen y te redireccionará a la <strong>¡página oficial
+                    de Techo!</strong></p>
+            <div class="image-container">
+                <a href="https://techo.org/" target="_blank"><img src="/img/imagen-techo.jpg"
+                        alt="Imagen de Fundación Techo"></a>
+            </div>
+        </section>
+
+
+        <section id="graficos">
+            <div class="texto">
+                <h1>ESTADISTICAS RECOLECTADAS</h1>
+                <h1> <a
+                        href="https://www.infobae.com/politica/2017/05/23/mapa-de-las-villas-en-argentina-juntas-son-mas-grandes-que-la-ciudad-de-buenos-aires/">Fuente
+                        de los datos recolectados</a></h1>
+                <p class="highlight">Se denomina "barrio popular" a los barrios donde viven al menos ocho familias
+                    agrupadas o contiguas, donde más de la mitad de la población no cuenta con título de propiedad del
+                    suelo ni acceso regular a dos o más de los servicios básicos: agua corriente, energía eléctrica o
+                    cloacas.</p>
+            </div>
+
+            <div class="additional-text">
+                <p class="additional-info">Este es un párrafo adicional que proporciona información sobre el primer
+                    gráfico.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-info">
+                    <h2>Número de Barrios Populares por Zona</h2>
+                    <p class="additional-info">Este gráfico muestra la distribución de barrios populares en diferentes
+                        zonas de la ciudad.</p>
+                </div>
+                <canvas id="myChart1"></canvas>
+            </div>
+
+            <div class="additional-text">
+                <p class="additional-info">Este es un párrafo adicional que proporciona información sobre el segundo
+                    gráfico.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-info">
+                    <h2>Distribución por Año de Creación</h2>
+                    <p class="additional-info">Este gráfico representa la cantidad de barrios populares creados antes y
+                        después del año 2000.
+                    </p>
+                </div>
+                <canvas id="myChart2"></canvas>
+            </div>
+
+            <div class="additional-text">
+                <p class="additional-info">Este es un párrafo adicional que proporciona información sobre el tercer
+                    gráfico.</p>
+            </div>
+
+            <div class="chart-container">
+                <div class="chart-info">
+                    <h2>Distribución por Grupo de Edad</h2>
+                    <p class="additional-info">Este gráfico muestra la distribución de la población en diferentes grupos
+                        de edad.</p>
+                </div>
+                <canvas id="myChart3"></canvas>
+            </div>
+        </section>
+
+        <section id="comentarios">
+    <h2>Cuentanos que te pareció nuestro proyecto dejando un comentario:</h2>
+    <form id="comment-form">
+        <label for="username">Nombre :</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+        <button type="submit">Publicar Comentario</button>
+    </form>
+    <div id="comments-list">
+        <!-- Los comentarios se cargarán aquí -->
+    </div>
+</section>
+
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="mailto:candesalome.mazza@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" required>
+        
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Candela Mazza - Chicas Tech (Grace Hopper) </p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const form = document.getElementById('comment-form');
+            const commentsList = document.getElementById('comments-list');
+    
+            // Cargar comentarios desde localStorage
+            const loadComments = () => {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                commentsList.innerHTML = comments.map((comment, index) => `
+                    <div class="comment">
+                        <button class="delete-btn" data-index="${index}">Eliminar</button>
+                        <div class="username">${comment.username}</div>
+                        <div class="timestamp">${comment.timestamp}</div>
+                        <div class="text">${comment.comment}</div>
+                    </div>
+                `).join('');
+                addDeleteEventListeners();
+            };
+    
+            // Guardar comentario en localStorage
+            const saveComment = (username, commentText) => {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.push({
+                    username: username,
+                    comment: commentText,
+                    timestamp: new Date().toLocaleString()
+                });
+                localStorage.setItem('comments', JSON.stringify(comments));
+            };
+    
+            // Eliminar comentario del localStorage
+            const deleteComment = (index) => {
+                const comments = JSON.parse(localStorage.getItem('comments')) || [];
+                comments.splice(index, 1);  // Elimina el comentario en la posición indicada
+                localStorage.setItem('comments', JSON.stringify(comments));
+                loadComments();  // Recargar comentarios después de eliminar uno
+            };
+    
+            // Manejar el envío del formulario
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const username = form.username.value.trim();
+                const commentText = form.comment.value.trim();
+    
+                if (username && commentText) {
+                    saveComment(username, commentText);
+                    form.reset();
+                    loadComments();
+                }
+            });
+    
+            // Añadir los event listeners para los botones de eliminar
+            const addDeleteEventListeners = () => {
+                document.querySelectorAll('.delete-btn').forEach(button => {
+                    button.addEventListener('click', () => {
+                        const index = button.getAttribute('data-index');
+                        deleteComment(index);
+                    });
+                });
+            };
+    
+            // Inicializar la sección de comentarios
+            loadComments();
+        });
+    </script>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        // Datos para el primer gráfico (Número de Barrios Populares por Zona)
+        const ctx1 = document.getElementById('myChart1').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ['Zona Sur', 'Zona Este', 'Zona Oeste', 'Zona Norte'],
+                datasets: [{
+                    label: 'Número de Barrios Populares',
+                    data: [15, 20, 8, 12],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Zonas'
+                        },
+                        ticks: {
+                            font: { size: 12 },
+                            autoSkip: true,
+                            maxTicksLimit: 5
+                        }
+                    },
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Número de Barrios Populares'
+                        },
+                        ticks: {
+                            font: { size: 12 }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                        labels: {
+                            font: { size: 14 }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Datos para el segundo gráfico (Barrios por Año de Creación)
+        const ctx2 = document.getElementById('myChart2').getContext('2d');
+        new Chart(ctx2, {
+            type: 'pie',
+            data: {
+                labels: ['Antes del 2000', 'Después del 2010'],
+                datasets: [{
+                    label: 'Distribución por Año de Creación',
+                    data: [2275, 749],
+                    backgroundColor: ['rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)'],
+                    borderColor: ['rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                        return '${tooltipItem.label}: ${tooltipItem.raw}'}
+                            }
+                        }
+                    }
+                }
+            }
+        );
+
+        // Datos para el tercer gráfico (Distribución por Grupo de Edad)
+        const ctx3 = document.getElementById('myChart3').getContext('2d');
+        new Chart(ctx3, {
+            type: 'pie',
+            data: {
+                labels: ['Menores de 20 años', 'Mayores de 65 años', 'Entre 20 y 64 años'],
+                datasets: [{
+                    label: 'Distribución por Grupo de Edad',
+                    data: [0.38 * 1.3e6, 0.03 * 1.3e6, 0.59 * 1.3e6],  // Datos en número absoluto
+                    backgroundColor: ['rgba(255, 159, 64, 0.2)', 'rgba(255, 205, 86, 0.2)', 'rgba(75, 192, 192, 0.2)'],
+                    borderColor: ['rgba(255, 159, 64, 1)', 'rgba(255, 205, 86, 1)', 'rgba(75, 192, 192, 1)'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top'
+                },
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                return $;{Math.round(tooltipItem.raw / 1e3)}K;  // Formato K para miles';
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Menú hamburguesa
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    </script>
+</body>
+
+</html>
